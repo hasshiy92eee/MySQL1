@@ -1,0 +1,22 @@
+CREATE DATABASE hukusyu;
+
+USE hukusyu;
+
+CREATE TABLE student (
+    ID int primary key,
+    NAME varchar(20),
+    GENDER char(1),
+    BIRTHDAY date,
+    `FROM` varchar(30),
+    COURSE varchar(30)
+);
+
+INSERT INTO student VALUES
+
+('1','染谷将太','m','1992-09-03','東京都','JavaScript'),
+('2','二階堂ふみ','f','1994-09-21','沖縄県','PHP'),
+('3','渡辺哲','m','1950-03-11','愛知県','Java'),
+('4','窪塚洋介','m','1979-05-07','神奈川県','HTML/CSS'),
+('5','吉高由里子','f','1988-07-22','東京都','Java');
+
+select * from student;
